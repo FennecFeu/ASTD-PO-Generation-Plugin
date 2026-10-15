@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="ASTDContextPlugin.objectContribution1"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="ASTDContextPlugin.menu1"
+               label="ASTD Correctness POs Generation">
+            <separator
+                  name="ASTDContextPlugin.separator1">
+            </separator>
+         </menu>
+         <action
+               class="com.udes.compiler.CompilerAction"
+               id="ASTDContextPlugin.action1"
+               label="From json ASTD to EventB Context"
+               menubarPath="ASTDContextPlugin.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
